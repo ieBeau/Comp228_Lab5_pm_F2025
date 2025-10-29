@@ -9,6 +9,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 
@@ -20,6 +21,14 @@ class CustomGridPaneCenter extends GridPane {
         setHgap(10);
         setVgap(10);
         setPadding(new Insets(10));
+
+        // Create two columns with equal width
+        ColumnConstraints col1 = new ColumnConstraints();
+        col1.setPercentWidth(50);
+        ColumnConstraints col2 = new ColumnConstraints();
+        col2.setPercentWidth(50);
+
+        getColumnConstraints().addAll(col1, col2);
 
         // Get First Name
         Label lblFirstName = new Label("First name *");
