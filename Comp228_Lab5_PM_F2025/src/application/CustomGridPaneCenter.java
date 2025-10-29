@@ -59,7 +59,7 @@ class CustomGridPaneCenter extends GridPane {
         add(txtEmail, 0, 4, 2, 1);
 
         // Get Personal Website URL
-        Label lblPersonalWebsite = new Label("Personal Website");
+        Label lblPersonalWebsite = new Label("Personal website");
         add(lblPersonalWebsite, 0, 5, 2, 1);
         TextField txtPersonalWebsite = new TextField("http://");
         add(txtPersonalWebsite, 0, 6, 2, 1);
